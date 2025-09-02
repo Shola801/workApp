@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/edittext_background"
+        android:layout_marginStart="16dp"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="387dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ci_person"
+                android:layout_width="110dp"
+                android:layout_height="50dp"
+                android:src="@drawable/plumbing"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="4dp"
+                android:layout_marginTop="20dp"
+                android:layout_centerInParent="true"/>
+
+           <LinearLayout
+               android:layout_width="170dp"
+               android:layout_height="match_parent"
+               android:orientation="vertical">
+
+               <TextView
+                   android:id="@+id/tv_search_name"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Andrew Olarewaju"
+                   android:textSize="18sp"
+                   android:textStyle="bold"/>
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal">
+
+                   <androidx.appcompat.widget.AppCompatButton
+                       android:id="@+id/button_black"
+                       android:layout_width="wrap_content"
+                       android:layout_height="25dp"
+                       android:background="@drawable/purple_button"
+                       android:text="View Profile"
+                       android:textSize="11sp"
+                       android:textColor="@color/white"
+                       android:textAllCaps="false"
+                       android:layout_marginTop="35dp"
+                       android:layout_marginBottom="9dp"/>
+
+                   <View
+                       android:layout_width="10dp"
+                       android:layout_height="5dp"/>
+
+
+                   <androidx.appcompat.widget.AppCompatButton
+                       android:id="@+id/button_blue"
+                       android:layout_width="wrap_content"
+                       android:layout_height="25dp"
+                       android:background="@drawable/book_shape"
+                       android:text="Book Services"
+                       android:textSize="11sp"
+                       android:textColor="@color/black"
+                       android:textAllCaps="false"
+                       android:layout_marginTop="35dp"
+                       android:layout_marginBottom="9dp"/>
+
+
+               </LinearLayout>
+
+
+           </LinearLayout>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Last seen 2d"
+    android:layout_marginTop="10dp"
+    android:textSize="10sp"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

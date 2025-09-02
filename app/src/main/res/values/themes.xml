@@ -1,0 +1,63 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+        <!-- Base application theme. -->
+        <style name="Base.Theme.Handiwork" parent="Theme.MaterialComponents.Light.NoActionBar">
+
+            <item name="colorPrimary">@color/secondary</item>
+            <item name="colorPrimaryVariant">@color/white</item>
+            <item name="colorOnPrimary">@color/white</item>
+
+            <item name="colorOnBackground">@color/white</item>
+            <item name="colorSurface">#FC4646</item>
+            <!-- Secondary brand color. -->
+            <item name="colorSecondary">@color/secondary</item>
+            <item name="colorSecondaryVariant">@color/teal_700</item>
+            <item name="colorOnSecondary">@color/black</item>
+            <!-- Status bar color. -->
+            <item name="android:statusBarColor">@color/white</item>
+            <item name="android:windowLightStatusBar">true</item>
+            <!-- Customize your light theme here. -->
+            <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        </style>
+
+        <style name="App.theme" parent="Theme.MaterialComponents.Light.NoActionBar">
+
+            <item name="colorPrimary">@color/secondary</item>
+            <item name="colorPrimaryVariant">@color/white</item>
+            <item name="colorOnPrimary">@color/white</item>
+
+            <item name="colorOnBackground">@color/white</item>
+            <item name="colorSurface">@color/black</item>
+            <!-- Secondary brand color. -->
+            <item name="colorSecondary">@color/secondary</item>
+            <item name="colorSecondaryVariant">@color/teal_700</item>
+            <item name="colorOnSecondary">@color/black</item>
+            <!-- Status bar color. -->
+            <item name="android:statusBarColor">@color/white</item>
+            <!--        <item name="android:windowLightStatusBar">true</item>-->
+            <!-- Customize your light theme here. -->
+            <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        </style>
+
+        <style name="BottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+            <item name="bottomSheetStyle">@style/BottomSheetStyle</item>
+        </style>
+
+
+        <style name="RatingBar"  parent="@android:style/Widget.RatingBar">
+            <item name="colorControlNormal">#454242</item>
+            <item name="colorControlActivated">#FFC107</item>
+        </style>
+
+
+        <style name="BottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+            <item name="android:background">@android:color/transparent</item>
+        </style>
+
+        <style name="FloatingButton" parent="Theme.MaterialComponents">
+            <item name="colorOnSecondary">@color/white</item>
+        </style>
+
+        <style name="AppSearchView" parent="Widget.AppCompat.SearchView">
+            <item name="android:textSize">12sp</item>
+        </style>
+</resources>

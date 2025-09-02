@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ServiceScreenActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/view_back_button"
+            android:layout_width="23dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/back_button" />
+
+        <View
+            android:id="@+id/view_notification"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/mingcute_notification_fill"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp">
+
+        <TextView
+            android:id="@+id/tv_service_search_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Appliances/Electronics Repairer near you"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="15dp"
+            android:textStyle="bold"/>
+
+        <View
+            android:id="@+id/view_search_setting"
+            android:layout_width="23dp"
+            android:layout_height="21dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="25dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/search_service_setting"/>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="20dp"/>
+
+</LinearLayout>

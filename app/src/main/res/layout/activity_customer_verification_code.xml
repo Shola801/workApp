@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".serviceProvider.auth.ServiceProviderVerificationCodeActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="14dp"
+            android:layout_height="22dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/baseline_arrow_back_ios_24"
+            android:layout_gravity="center"/>
+
+
+
+        <TextView
+            android:layout_width="127dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center"
+            android:text="Verification Code"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="210dp"
+        android:src="@drawable/verification_code"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kindly enter the Code set to your"
+        android:layout_gravity="center"
+        android:textSize="16sp"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="email"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4D5995"
+            android:textStyle="bold"
+            android:text="********dy@gmail.com"
+            android:textSize="16sp"/>
+
+
+
+    </LinearLayout>
+
+    <com.chaos.view.PinView
+        android:id="@+id/et_code"
+        style="@style/PinWidget.PinView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:cursorVisible="true"
+        android:inputType="number"
+        android:itemBackground="@drawable/edittext_background"
+        android:maxLength="4"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:cursorColor="@color/black"
+        app:cursorWidth="2dp"
+        app:hideLineWhenFilled="false"
+        app:itemCount="4"
+        app:itemHeight="50dp"
+        app:itemRadius="3dp"
+        app:itemSpacing="30dp"
+        app:itemWidth="50dp"
+        app:lineColor="@color/white"
+        app:lineWidth="1dp"
+        app:viewType="rectangle"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/customer_verification_code"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Continue"
+        android:textAllCaps="false"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="20sp"
+        android:background="@drawable/purple_button"
+        android:textColor="@color/white"
+        android:layout_marginTop="50dp"/>
+
+
+
+
+</LinearLayout>

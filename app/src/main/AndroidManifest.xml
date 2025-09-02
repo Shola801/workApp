@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Base.Theme.Handiwork"
+        tools:targetApi="31">
+        <activity
+            android:name=".DetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ServiceScreenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProductCategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerDashBoard"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".serviceProvider.auth.ServiceProviderVerificationCodeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".customer.auth.CustomerVerificationCodeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".serviceProvider.auth.ServiceProviderResetPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".customer.auth.CustomerResetPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".serviceProvider.auth.ServiceProviderRecoverPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".customer.auth.CustomerRecoverPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".signUp.SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChoiceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".login.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
