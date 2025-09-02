@@ -106,6 +106,7 @@ public class CustomerFragment extends Fragment {
 
                     Intent myIntent = new Intent(getActivity(), CustomerDashBoard.class);
                     startActivity(myIntent);
+//
 
                 } else {
                     Toast.makeText(getActivity(), "field is empty", Toast.LENGTH_SHORT).show();
